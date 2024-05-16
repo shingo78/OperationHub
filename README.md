@@ -178,6 +178,12 @@ Maximum number of bytes a single-user notebook server is allowed to use.
 For an empty string, no limits are configured.
 For the values that can be set, see [c.DockerSpawner.mem_limit](https://jupyterhub-dockerspawner.readthedocs.io/en/latest/api/index.html#dockerspawner.DockerSpawner.mem_limit).
 
+**ADMIN_GROUPS**
+
+Authoritative list of user groups that determine jupyterhub admin access.
+
+The group names are separated by spaces. The default value is `wheel`.
+
 **CULL_ENABLE**
 
 If CULL_ENABLE is `yes` or `1`, enables culling idle single-user servers. The default value is `no`.
