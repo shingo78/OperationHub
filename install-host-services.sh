@@ -44,6 +44,7 @@ systemctl start ophubuser.service
 [ -e /etc/systemd/system/copy-passwd.path ] \
     && systemctl -q is-active copy-passwd.path \
     && systemctl stop copy-passwd.path
+systemctl enable copy-passwd.service
 systemctl -q is-active copy-passwd.service \
     && systemctl stop copy-passwd.service
 systemctl start copy-passwd.service
