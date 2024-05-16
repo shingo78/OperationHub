@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ## Host service installer for OperationHub
 
 set -e
